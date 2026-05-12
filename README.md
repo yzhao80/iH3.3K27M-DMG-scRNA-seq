@@ -18,11 +18,10 @@ This repository contains all R scripts for reproducing the single-cell RNA-seq a
 ├── 06_cellchat_heatmap_pathways.R             # LR heatmaps & diverging bar charts
 ├── 07_immune_subclustering.R                  # Immune cell re-clustering, UMAP, barplot
 ├── utilities/
-│   ├── rankNet_patched.R                      # Patched CellChat rankNet (see below)
-│   ├── netAnalysis_signalingRole_heatmap2.R   # Extended signaling role heatmap
-│   └── violin_plot_celltype.R                 # Annotated violin plot panels
-├── data/                                      # Input data (not tracked – see below)
-└── results/                                   # Output figures & tables (generated)
+    ├── rankNet_patched.R                      # Patched CellChat rankNet (see below)
+    ├── netAnalysis_signalingRole_heatmap2.R   # Extended signaling role heatmap
+    └── violin_plot_celltype.R                 # Annotated violin plot panels
+
 ```
 
 ---
@@ -110,19 +109,12 @@ The 9 immune subtypes identified after re-clustering cluster 18 (Louvain res = 0
 | scDblFinder | 1.18.0 |
 | CellChat | 1.6.1 |
 | ComplexHeatmap | 2.20.0 |
-| patchwork | 1.2.x |
-| ggplot2 | 3.5.x |
-| ggrepel | 0.9.x |
 
 ---
 
 ## Data availability
 
 Raw FASTQ files are deposited at GEO under accession **[GSE######]** (to be added upon publication).
-
-The processed Seurat object (`seurat_merged_clustered.rds`) is available at **[link]**.
-
-Place downloaded data files in the `data/` directory before running scripts.
 
 ---
 
